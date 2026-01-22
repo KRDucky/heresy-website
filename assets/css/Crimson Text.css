@@ -1,0 +1,107 @@
+@font-face {
+	font-family: 'Crimson Text';
+	src: url(/assets/fonts/Crimson%20Text-8cb3e8786b81752b8d72231c32b17f7a.woff2?h=9f5464c927fc6c98578568454a0b4b12) format('woff2');
+	font-weight: 400;
+	font-style: italic;
+	font-display: swap;
+	unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+	font-family: 'Crimson Text';
+	src: url(/assets/fonts/Crimson%20Text-fae9ab0938aa9e8d2dc88037c0f92d9d.woff2?h=9f5464c927fc6c98578568454a0b4b12) format('woff2');
+	font-weight: 400;
+	font-style: italic;
+	font-display: swap;
+	unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+	font-family: 'Crimson Text';
+	src: url(/assets/fonts/Crimson%20Text-b48d9c89d033ca2c827073fd51b75539.woff2?h=9f5464c927fc6c98578568454a0b4b12) format('woff2');
+	font-weight: 400;
+	font-style: italic;
+	font-display: swap;
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+	font-family: 'Crimson Text';
+	src: url(/assets/fonts/Crimson%20Text-95fa1420de20893fe6214951bf0b4a61.woff2?h=9f5464c927fc6c98578568454a0b4b12) format('woff2');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+	unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+	font-family: 'Crimson Text';
+	src: url(/assets/fonts/Crimson%20Text-403dcdfcbe1110c4cd25c49eab4efe42.woff2?h=9f5464c927fc6c98578568454a0b4b12) format('woff2');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+	unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+	font-family: 'Crimson Text';
+	src: url(/assets/fonts/Crimson%20Text-a03f1080a68a6b805959e19b226cdb7e.woff2?h=9f5464c927fc6c98578568454a0b4b12) format('woff2');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+	font-family: 'Crimson Text';
+	src: url(/assets/fonts/Crimson%20Text-d1fbc510901d55689fb87d853887cfa8.woff2?h=9f5464c927fc6c98578568454a0b4b12) format('woff2');
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+	unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+	font-family: 'Crimson Text';
+	src: url(/assets/fonts/Crimson%20Text-ef5eb250c6ef82fffe8e06269f4aeb94.woff2?h=9f5464c927fc6c98578568454a0b4b12) format('woff2');
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+	unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+	font-family: 'Crimson Text';
+	src: url(/assets/fonts/Crimson%20Text-72e65a594aeec544cd8177a898fa2658.woff2?h=9f5464c927fc6c98578568454a0b4b12) format('woff2');
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+	font-family: 'Crimson Text';
+	src: url(/assets/fonts/Crimson%20Text-375453c67c7acce3a4159aa7a0ffd9c7.woff2?h=9f5464c927fc6c98578568454a0b4b12) format('woff2');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+	unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+	font-family: 'Crimson Text';
+	src: url(/assets/fonts/Crimson%20Text-adb027b679442320cb7e685c9b8fff96.woff2?h=9f5464c927fc6c98578568454a0b4b12) format('woff2');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+	unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+	font-family: 'Crimson Text';
+	src: url(/assets/fonts/Crimson%20Text-12b9d54eca9ed1522df47b70cf369bba.woff2?h=9f5464c927fc6c98578568454a0b4b12) format('woff2');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}

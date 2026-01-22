@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Server Status - Heresy Gaming Network</title>
+    <meta name="description" content="Live status monitoring for all Heresy Gaming Network game servers - ARK, Minecraft, Veloren, and more.">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/blackletter_shadowregular.css?h=6994a3f44ddc4a31fcc9b11c6aa1337d">
+    <link rel="stylesheet" href="/assets/css/blackletterextrabold.css?h=6994a3f44ddc4a31fcc9b11c6aa1337d">
+    <link rel="stylesheet" href="/assets/css/faith_collapsingregular.css?h=6994a3f44ddc4a31fcc9b11c6aa1337d">
+    <link rel="stylesheet" href="/assets/css/long_shotregular.css?h=6994a3f44ddc4a31fcc9b11c6aa1337d">
+    <link rel="stylesheet" href="/assets/css/old_london_alternateregular.css?h=6994a3f44ddc4a31fcc9b11c6aa1337d">
+    <link rel="stylesheet" href="/assets/css/old_londonregular.css?h=6994a3f44ddc4a31fcc9b11c6aa1337d">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="/assets/css/styles.css?h=94e64ddb27376af57a6b3bc288783838">
+    <link rel="stylesheet" href="/assets/css/bootstrap/css/bootstrap.min.css?h=adc06f5d01c7724ad48aee80c0ef2321">
+    <link rel="stylesheet" href="/assets/css/fonts/fontawesome-all.min.css?h=bbdee5d1310a5050ebf21bd0dbac12c6">
+    <link rel="stylesheet" href="/assets/css/css/aos.min.css?h=ea67d3638a91cd05d22f1b4e31c7b746">
+    <link rel="stylesheet" href="/assets/css/css/styles.css?h=529da74958c39f17e46984d4fca72e10">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark heresy-navbar">
+        <div class="container-fluid"><a class="navbar-brand d-flex align-items-center" href="/index.html"><img src="assets/img/heresylogo.png" alt="Heresy Gaming Logo" class="brand-logo">
+                <div class="ms-3 brand-text">
+                    <div class="brand-title"><span>Heresy Gaming Network</span></div>
+                    <div class="brand-subtitle"><span>Minecraft • ARK • Veloren</span></div>
+                </div>
+            </a><button data-bs-toggle="collapse" data-bs-target="#navbarNav" class="navbar-toggler" type="button" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav align-items-lg-center ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="/index.html"><i class="fas fa-home"></i> Home </a></li>
+                    <li class="nav-item"><a class="nav-link" href="/about.html"><i class="fas fa-info-circle"></i> About &amp; Rules </a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="/servers.html"><i class="fas fa-server"></i> Servers </a></li>
+                    <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" href="#" id="communityDropdown" role="button"><i class="fas fa-users"></i> Community </a>
+                        <ul aria-labelledby="communityDropdown" class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item" href="https://discord.gg/g3uuQFgahv" rel="noopener" target="_blank"><i class="fab fa-discord"></i> Discord </a></li>
+                            <li><a class="dropdown-item" href="https://forums.heresygaming.com" rel="noopener" target="_blank"><i class="fas fa-comments"></i> Forums </a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="https://giveaways.heresygaming.com" rel="noopener" target="_blank"><i class="fas fa-gift"></i> Giveaways </a></li>
+                            <li><a class="dropdown-item" href="https://board.heresygaming.com" rel="noopener" target="_blank"><i class="fas fa-tasks"></i> Project Board </a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="page-header">
+        <div class="aquila-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="container text-center position-relative">
+            <h1 class="display-4 mb-2">Server Status</h1>
+            <p class="lead text-light-subtle">Real-time monitoring of all game servers and infrastructure</p>
+        </div>
+    </section>
+    <section class="py-4 status-overview">
+        <div class="container">
+            <div class="row g-3">
+                <div class="col-6 col-md-3">
+                    <div class="status-summary-card">
+                        <div class="status-icon online"><i class="fas fa-server"></i></div>
+                        <div class="status-info">
+                            <div class="status-count" id="total-servers"><span>--</span></div>
+                            <div class="status-label"><span>Total Servers</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="status-summary-card">
+                        <div class="status-icon online"><i class="fas fa-check-circle"></i></div>
+                        <div class="status-info">
+                            <div class="status-count" id="online-servers"><span>--</span></div>
+                            <div class="status-label"><span>Online</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="status-summary-card">
+                        <div class="status-icon"><i class="fas fa-users"></i></div>
+                        <div class="status-info">
+                            <div class="status-count" id="total-players"><span>--</span></div>
+                            <div class="status-label"><span>Players Online</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="status-summary-card">
+                        <div class="status-icon"><i class="fas fa-clock"></i></div>
+                        <div class="status-info">
+                            <div class="status-count" id="last-update"><span>--</span></div>
+                            <div class="status-label"><span>Last Update</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-5 servers-section" id="ark-servers">
+        <div class="container">
+            <div class="mb-4 section-header">
+                <div class="d-flex justify-content-between align-items-center flex-wrap gap-3">
+                    <div>
+                        <h2 class="mb-2 section-title h3"><i class="fas fa-dragon text-crimson"></i> ARK: Survival Evolved </h2>
+                        <p class="mb-0 section-subtitle">Powered by BattleMetrics</p>
+                    </div><a class="btn btn-outline-light btn-sm" role="button" href="https://www.battlemetrics.com/servers/arkse" target="_blank"><i class="fas fa-external-link-alt"></i> View on BattleMetrics </a>
+                </div>
+            </div>
+            <div class="row g-4" id="battlemetrics-cards">
+                <div class="col-12 col-lg-6">
+                    <article class="server-card battlemetrics-card" data-server-id="32628006">
+                        <div class="server-card-header">
+                            <div class="server-game-info">
+                                <h3 class="server-title">ARK: Survival Evolved</h3><span class="server-map">Ragnarok</span>
+                            </div><span class="server-status-badge loading"><span class="status-dot"></span><span class="status-text">Loading...</span></span>
+                        </div>
+                        <div class="server-card-body">
+                            <div class="server-stats-grid">
+                                <div class="stat-item skeleton"><i class="fas fa-users"></i><span class="stat-label">Players</span><span class="stat-value">--/--</span></div>
+                                <div class="stat-item skeleton"><i class="fas fa-network-wired"></i><span class="stat-label">IP Address</span><span class="stat-value">--</span></div>
+                                <div class="stat-item skeleton"><i class="fas fa-clock"></i><span class="stat-label">Last Updated</span><span class="stat-value">--</span></div>
+                            </div>
+                        </div><a class="server-card-link" href="https://www.battlemetrics.com/servers/ark/37280244" target="_blank" aria-label="View ARK Ragnarok on BattleMetrics"><span>View Details on BattleMetrics</span><i class="fas fa-external-link-alt"></i></a>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-5 servers-section bg-darker" id="tsarvar-servers">
+        <div class="container">
+            <div class="mb-4 section-header">
+                <div class="d-flex justify-content-between align-items-center flex-wrap gap-3">
+                    <div>
+                        <h2 class="mb-2 section-title h3"><i class="fas fa-chart-line text-gold"></i> Advanced Server Monitoring </h2>
+                        <p class="mb-0 section-subtitle">TSARVAR Performance Panels</p>
+                    </div>
+                    <div class="btn-group" role="group"><button class="btn btn-outline-light btn-sm" type="button"><i class="fas fa-external-link-alt"></i> Open All Panels </button></div>
+                </div>
+            </div>
+            <div class="alert alert-info mb-4" role="alert"><i class="fas fa-info-circle"></i><strong>About TSARVAR:</strong><span> Click any panel below to open detailed performance metrics including CPU usage, RAM, network stats, and historical data for our game servers. </span></div>
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="server-card tsarvar-panel-card">
+                        <div class="server-card-header">
+                            <div class="server-game-info">
+                                <h3 class="server-title">ARK Ragnarok</h3><span class="server-map">Performance Panel</span>
+                            </div><span class="server-status-badge online"><span class="status-dot"></span><span class="status-text">Available</span></span>
+                        </div>
+                        <div class="server-card-body">
+                            <p class="text-muted mb-3 small"> View detailed server performance metrics, resource usage, and historical data. </p>
+                            <div class="d-grid"><a class="btn btn-outline-light btn-sm tsarvar-link" role="button" href="https://tsarvar.com/en/servers/ark/199.168.169.162:7777" data-tsarvar-server="ragnarok" target="_blank" rel="noopener"><i class="fas fa-chart-area"></i> Open Performance Panel </a></div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="alert alert-warning mt-4" role="alert"><i class="fas fa-wrench"></i><strong>Configuration Required:</strong><span> Update the TSARVAR panel URLs in the page source with your actual TSARVAR dashboard links. </span></div>
+        </div>
+    </section>
+    <section class="py-5 servers-section" id="uptime-monitoring">
+        <div class="container">
+            <div class="mb-4 section-header">
+                <div class="d-flex justify-content-between align-items-center flex-wrap gap-3">
+                    <div>
+                        <h2 class="mb-2 section-title h3"><i class="fas fa-heartbeat text-success"></i> Infrastructure Uptime </h2>
+                        <p class="mb-0 section-subtitle">Uptime Kuma Monitoring</p>
+                    </div><a class="btn btn-outline-light btn-sm" role="button" href="#" id="uptime-kuma-link" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i> Open Status Page </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <article class="content-card">
+                        <div class="content-card-body">
+                            <div class="row align-items-center">
+                                <div class="col-12 col-lg-8">
+                                    <h3 class="mb-3 h5"><i class="fas fa-info-circle text-info"></i> About Uptime Kuma Monitoring </h3>
+                                    <p class="mb-3"> Uptime Kuma provides comprehensive monitoring of our entire infrastructure including game servers, web services, databases, and APIs. The status page shows real-time uptime percentages and incident history. </p>
+                                    <ul class="list-unstyled mb-0">
+                                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Real-time uptime monitoring </li>
+                                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Response time tracking </li>
+                                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Incident history and reports </li>
+                                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Service availability statistics </li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 col-lg-4 text-center">
+                                    <div class="mb-3 uptime-visual"><i class="fas fa-server" style="font-size:4rem;color:var(--color-gold);"></i></div><a class="btn btn-primary btn-lg" role="button" href="#" id="uptime-kuma-button" target="_blank" rel="noopener"><i class="fas fa-chart-line"></i> View Status Dashboard </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <div class="alert alert-warning mt-4" role="alert"><i class="fas fa-wrench"></i><strong>Configuration Required:</strong><span> Update the Uptime Kuma status page URL in the page source with your actual dashboard link. </span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-5 servers-section bg-darker" id="other-services">
+        <div class="container">
+            <div class="mb-4 section-header">
+                <h2 class="mb-2 section-title h3"><i class="fas fa-cogs text-gold"></i> Other Game Servers </h2>
+                <p class="section-subtitle">Minecraft, Veloren, and more</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-12 col-md-6">
+                    <article class="server-card">
+                        <div class="server-card-header">
+                            <div class="server-game-info">
+                                <h3 class="server-title">Minecraft RPG Network</h3><span class="server-map">In Development</span>
+                            </div><span class="server-status-badge" style="background:rgba(245, 158, 11, 0.2);color:var(--color-warning);"><span class="status-dot" style="background:var(--color-warning);"></span><span class="status-text">Coming Soon</span></span>
+                        </div>
+                        <div class="server-card-body">
+                            <p class="text-muted mb-3"> Custom RPG network with multiple worlds and progression systems. Status monitoring will be added when servers launch. </p>
+                            <div class="stat-item"><i class="fas fa-info-circle"></i><span class="stat-label">Status</span><span class="stat-value">Development Phase</span></div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-md-6">
+                    <article class="server-card">
+                        <div class="server-card-header">
+                            <div class="server-game-info">
+                                <h3 class="server-title">Veloren</h3><span class="server-map">Open Source Voxel RPG</span>
+                            </div><span class="server-status-badge online"><span class="status-dot"></span><span class="status-text">Active</span></span>
+                        </div>
+                        <div class="server-card-body">
+                            <p class="text-muted mb-3"> Dockerized Veloren server. For connection details and server status, please check Discord or ask an admin. </p>
+                            <div class="d-grid"><a class="btn btn-outline-light btn-sm" role="button" href="https://discord.gg/g3uuQFgahv" target="_blank"><i class="fab fa-discord"></i> Ask on Discord </a></div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="py-4 site-footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-12 col-md-4">
+                    <div class="footer-brand"><img class="mb-3 footer-logo" src="assets/img/heresylogo.png" alt="Heresy Gaming Logo">
+                        <p class="footer-tagline">In the grim darkness of the far future, there is only gaming.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-home"></i><a href="/index.html"> Home</a></li>
+                        <li><i class="fas fa-info-circle"></i><a href="/about.html"> About &amp; Rules</a></li>
+                        <li><i class="fas fa-server"></i><a href="/servers.html"> Server Status</a></li>
+                        <li><i class="fas fa-comments"></i><a href="https://forums.heresygaming.com" target="_blank"> Forums</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-4">
+                    <h4 class="footer-title">Connect</h4>
+                    <div class="footer-social"><a href="https://discord.gg/g3uuQFgahv" target="_blank" class="social-link discord" aria-label="Discord"><i class="fab fa-discord"></i></a></div>
+                    <p class="mt-3 footer-contact"><i class="fas fa-envelope"></i> Contact via Discord </p>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="text-center footer-bottom">
+                <p class="mb-0"> © <span id="currentYear"></span> Heresy Gaming Network. All rights reserved. <br><small class="text-muted">Warhammer 40K is property of Games Workshop. This site is fan-made and not affiliated.</small></p>
+            </div>
+        </div>
+    </footer><script>
+        // ===== CONFIGURATION SECTION =====
+        // Update these URLs with your actual TSARVAR and Uptime Kuma links
+        
+        const TSARVAR_CONFIG = {
+            ragnarok: 'https://your-tsarvar-instance.com/panel/ragnarok',
+            fjordur: 'https://your-tsarvar-instance.com/panel/fjordur',
+            island: 'https://your-tsarvar-instance.com/panel/island'
+        };
+        
+        const UPTIME_KUMA_URL = 'https://your-uptime-kuma.com/status/heresygaming';
+        
+        // ===== INITIALIZATION =====
+        document.addEventListener('DOMContentLoaded', function() {
+            // Configure TSARVAR links
+            document.querySelectorAll('.tsarvar-link').forEach(link => {
+                const server = link.dataset.tsarvarServer;
+                if (TSARVAR_CONFIG[server]) {
+                    link.href = TSARVAR_CONFIG[server];
+                } else {
+                    link.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        alert('TSARVAR panel URL not configured for this server. Please update TSARVAR_CONFIG in servers.html');
+                    });
+                }
+            });
+            
+            // Configure Uptime Kuma links
+            const uptimeLinks = document.querySelectorAll('#uptime-kuma-link, #uptime-kuma-button');
+            uptimeLinks.forEach(link => {
+                if (UPTIME_KUMA_URL && !UPTIME_KUMA_URL.includes('your-uptime-kuma')) {
+                    link.href = UPTIME_KUMA_URL;
+                } else {
+                    link.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        alert('Uptime Kuma URL not configured. Please update UPTIME_KUMA_URL in servers.html');
+                    });
+                }
+            });
+            
+            // Update status overview (waits for BattleMetrics to load)
+            setTimeout(updateStatusOverview, 2000);
+            setInterval(updateStatusOverview, 60000);
+        });
+        
+        // ===== HELPER FUNCTIONS =====
+        function openAllTsarvar() {
+            Object.values(TSARVAR_CONFIG).forEach(url => {
+                if (url && !url.includes('your-tsarvar-instance')) {
+                    window.open(url, '_blank');
+                }
+            });
+        }
+        
+        function updateStatusOverview() {
+            const battlemetricsCards = document.querySelectorAll('.battlemetrics-card');
+            let totalServers = battlemetricsCards.length;
+            let onlineServers = 0;
+            let totalPlayers = 0;
+            
+            battlemetricsCards.forEach(card => {
+                const badge = card.querySelector('.server-status-badge');
+                if (badge && badge.classList.contains('online')) {
+                    onlineServers++;
+                }
+                
+                // Try to get player count
+                const playerStat = card.querySelector('.stat-value');
+                if (playerStat && playerStat.textContent.includes('/')) {
+                    const [current] = playerStat.textContent.split('/');
+                    const playerCount = parseInt(current);
+                    if (!isNaN(playerCount)) {
+                        totalPlayers += playerCount;
+                    }
+                }
+            });
+            
+            // Update summary cards
+            document.getElementById('total-servers').textContent = totalServers;
+            document.getElementById('online-servers').textContent = onlineServers;
+            document.getElementById('total-players').textContent = totalPlayers;
+            
+            const now = new Date();
+            const timeStr = now.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' });
+            document.getElementById('last-update').textContent = timeStr;
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/bs-init.js?h=d0c6de1d0ecd5065d55e7b94664b5b10"></script>
+    <script src="/assets/js/battlemetrics.js?h=851162cbcb2cb80ff7dd3157b75b9608"></script>
+    <script src="/assets/js/giveaways.js?h=6870e4a023539abeb9296e128b1e2318"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/main.js?h=59abcf8a2752bdc6937ba3b148ea8f9d"></script>
+    <script src="/assets/js/bootstrap/js/bootstrap.min.js?h=895c39cf45acf22e2384038a6d31857b"></script>
+    <script src="/assets/js/js/aos.min.js?h=d3718e34eeb0355be8e3179a2e2bccb7"></script>
+    <script src="/assets/js/js/bs-init.js?h=d0c6de1d0ecd5065d55e7b94664b5b10"></script>
+</body>
+
+</html>

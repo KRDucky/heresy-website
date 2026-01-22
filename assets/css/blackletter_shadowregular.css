@@ -1,0 +1,8 @@
+@font-face {
+	font-family: 'blackletter_shadowregular';
+	src: url(/assets/fonts/blackletter_shadowregular-ef1ede75be926d71077962cd15d30479.woff2?h=6994a3f44ddc4a31fcc9b11c6aa1337d) format('woff2'),
+	url(/assets/fonts/blackletter_shadowregular-b98f0f44cd2a1ef263b6ca0a77b9666e.woff?h=6994a3f44ddc4a31fcc9b11c6aa1337d) format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: auto;
+}

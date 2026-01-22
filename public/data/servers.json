@@ -1,0 +1,24 @@
+{
+  "servers": [
+    {
+      "id": "ark-ragnarok",
+      "game": "ARK: Survival Evolved",
+      "map": "Ragnarok",
+      "type": "battlemetrics",
+      "battlemetrics_id": "32628006",
+      "connect_url": "https://www.battlemetrics.com/servers/ark/32628006",
+      "tags": ["pve", "mods"],
+      "enabled": true
+    },
+    {
+      "id": "veloren-main",
+      "game": "Veloren",
+      "map": "Public Server",
+      "type": "direct",
+      "ip": "veloren.heresygaming.com",
+      "port": 14004,
+      "connect_url": "veloren://connect/veloren.heresygaming.com:14004",
+      "enabled": true
+    }
+  ]
+}

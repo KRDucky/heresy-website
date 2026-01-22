@@ -1,0 +1,8 @@
+@font-face {
+	font-family: 'blackletterextrabold';
+	src: url(/assets/fonts/blackletterextrabold-117a0ca57eda736c113ec5fd091eeced.woff2?h=6994a3f44ddc4a31fcc9b11c6aa1337d) format('woff2'),
+	url(/assets/fonts/blackletterextrabold-e8771e7f968d342c8ab133200b473b36.woff?h=6994a3f44ddc4a31fcc9b11c6aa1337d) format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: auto;
+}

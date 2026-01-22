@@ -1,0 +1,17 @@
+@font-face {
+	font-family: 'old_london_alternateregular';
+	src: url(/assets/fonts/old_london_alternateregular-f49e79c93af43afd53e07f549502dbd2.woff2?h=6994a3f44ddc4a31fcc9b11c6aa1337d) format('woff2'),
+	url(/assets/fonts/old_london_alternateregular-5954970bd54c57c2ad7004139c562d63.woff?h=6994a3f44ddc4a31fcc9b11c6aa1337d) format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: auto;
+}
+
+@font-face {
+	font-family: 'old_london_alternateregular';
+	src: url(/assets/fonts/old_london_alternateregular-3b9b3a18611fc73068c2931c4ef45c34.woff2?h=6994a3f44ddc4a31fcc9b11c6aa1337d) format('woff2'),
+	url(/assets/fonts/old_london_alternateregular-4082414514d3b145cfe8fe91cffe92a1.woff?h=6994a3f44ddc4a31fcc9b11c6aa1337d) format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: auto;
+}

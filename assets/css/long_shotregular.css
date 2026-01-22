@@ -1,0 +1,8 @@
+@font-face {
+	font-family: 'long_shotregular';
+	src: url(/assets/fonts/long_shotregular-0d8e629f93af5300d5ec9fe29b6e8d0d.woff2?h=6994a3f44ddc4a31fcc9b11c6aa1337d) format('woff2'),
+	url(/assets/fonts/long_shotregular-dce92233aa33e15140ca6802de98f9b9.woff?h=6994a3f44ddc4a31fcc9b11c6aa1337d) format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: auto;
+}
